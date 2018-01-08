@@ -1,5 +1,5 @@
 const axios = require('axios')
-const { stringify } = require('querystring')
+// const { stringify } = require('querystring')
 const config = require('./config')
 
 async function getToken () {
@@ -30,6 +30,7 @@ async function getToken () {
   }
 }
 
+/*
 async function getData (url, token) {
   const httpInstance = axios.create({
     baseURL: url
@@ -39,5 +40,6 @@ async function getData (url, token) {
   const { data } = await httpInstance.get(url)
   console.log(JSON.stringify(data, null, 2))
 }
+*/
 
 getToken()
