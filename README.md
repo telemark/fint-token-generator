@@ -20,7 +20,7 @@ npx fint-token-generator -c 6e1cf7b4-b107-42b3-9435-8fda70726c6a -C 6y4FUuP9BfAX
 | -U, --url           | OAuth2 url (optional)     |
 | -u, --username      | username                  |
 
-## Use node as node module
+## Use as node module
 
 Install fint-token-generator
 
