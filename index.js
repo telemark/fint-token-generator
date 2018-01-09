@@ -1,45 +1,36 @@
-const axios = require('axios')
-// const { stringify } = require('querystring')
-const config = require('./config')
+const rp = require('request-promise')
+const { stringify } = require('querystring')
 
-async function getToken () {
-  const payload = {
-    username: config.USERNAME,
-    password: config.PASSWORD,
-    grant_type: 'password'
+module.exports = async opts => {
+  if (!opts) {
+    throw Error('Missing required input: options')
+  }
+  if (!opts.url) {
+    throw Error('Missing required input: options.url')
+  }
+  if (!opts.credentials) {
+    throw Error('Missing required input: options.credentials')
+  }
+  if (!opts.credentials.auth) {
+    throw Error('Missing required input: options.credentials.auth')
+  }
+  if (!opts.credentials.client) {
+    throw Error('Missing required input: options.credentials.client')
   }
 
-  const httpInstance = axios.create({
-    baseURL: config.IDP_ENDPOINT,
-    method: 'post',
-    params: {
-      client_id: config.CLIENT_ID,
-      client_secret: config.CLIENT_SECRET,
-      scope: config.SCOPE
-    },
-    data: payload
-  })
+  const { url, credentials } = opts
 
-  httpInstance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+  const httpOpts = {
+    uri: url + '?' + stringify(credentials.client),
+    method: 'POST',
+    json: true,
+    form: credentials.auth
+  }
 
   try {
-    const { data } = await httpInstance.post()
-    console.log(data)
+    const data = await rp(httpOpts)
+    return data
   } catch (error) {
-    console.log(error)
+    throw error
   }
 }
-
-/*
-async function getData (url, token) {
-  const httpInstance = axios.create({
-    baseURL: url
-  })
-  httpInstance.defaults.headers.common['Authorization'] = token
-  httpInstance.defaults.headers.common['x-org-id'] = config.ORG_ID
-  const { data } = await httpInstance.get(url)
-  console.log(JSON.stringify(data, null, 2))
-}
-*/
-
-getToken()

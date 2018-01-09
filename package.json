@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "standard && nsp check && ava",
     "test-offline": "standard && ava",
@@ -14,7 +17,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "axios": "0.17.1"
+    "request": "2.83.0",
+    "request-promise": "4.2.2"
   },
   "devDependencies": {
     "ava": "0.24.0",
