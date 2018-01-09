@@ -36,4 +36,8 @@ fintTokenGenerator(options)
   })
 ```
 
+## Get token and data
+
+See [tst.js](tst.js)
+
 
