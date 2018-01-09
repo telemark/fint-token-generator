@@ -10,9 +10,8 @@ Install fint-token-generator
 npm i fint-token-generator
 ```
 
-
 ```js
-const fint-token-generator = require('fint-token-generator')
+const fintTokenGenerator = require('fint-token-generator')
 
 const options = {
   url: 'https://namidp01.rogfk.no/nidp/oauth/nam/token',
@@ -29,12 +28,12 @@ const options = {
   }
 }
 
-fint-token-generator(options)
+fintTokenGenerator(options)
   .then(token => {
     console.log(token)
-  }.catch(error => {
+  }).catch(error => {
     console.error(error)
-  )
+  })
 ```
 
 
