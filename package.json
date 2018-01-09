@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "fint-token-generator": "./bin/fint-token-generator"
+  },
   "files": [
-    "index.js"
+    "index.js",
+    "bin"
   ],
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -17,7 +21,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "args": "^3.0.8",
+    "args": "3.0.8",
     "request": "2.83.0",
     "request-promise": "4.2.2"
   },
