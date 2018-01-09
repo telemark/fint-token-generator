@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/telemark/fint-token-generator.svg?branch=master)](https://travis-ci.org/telemark/fint-token-generator)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![Greenkeeper badge](https://badges.greenkeeper.io/telemark/fint-token-generator.svg)](https://greenkeeper.io/)
 
 # fint-token-generator
@@ -5,8 +7,7 @@
 ## Use with cli
 
 ```bash
-npm i -g fint-token-generator
-fint-token-generator -c 6e1cf7b4-b107-42b3-9435-8fda70726c6a -C 6y4FUuP9BfAXeVqguNKT0ofToIwN5RdB1PaUvx_nCMiQbH9NeGq3pp0jQB9zOQ0APOxEbodzJXp-8RVux6318A -u pwfatut -p pwfatut
+npx fint-token-generator -c 6e1cf7b4-b107-42b3-9435-8fda70726c6a -C 6y4FUuP9BfAXeVqguNKT0ofToIwN5RdB1PaUvx_nCMiQbH9NeGq3pp0jQB9zOQ0APOxEbodzJXp-8RVux6318A -u pwfatut -p pwfatut
 ```
 
 | Option              | Description               |
@@ -57,4 +58,8 @@ fintTokenGenerator(options)
 
 See [tst.js](tst.js)
 
+## License
 
+[MIT](LICENSE)
+
+![Robohash image of fint-token-generator](https://robots.kebabstudios.party/fint-token-generator.png "Robohash image of fint-token-generator")

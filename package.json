@@ -1,7 +1,7 @@
 {
   "name": "fint-token-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Module for retreiving a token from FINT",
   "main": "index.js",
   "bin": {
     "fint-token-generator": "./bin/fint-token-generator"
@@ -18,8 +18,25 @@
     "standard-fix": "standard --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Jonas Maccyber Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
+  },
+  "contributors": [{
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  }],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telemark/fint-token-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/fint-token-generator/issues"
+  },
+  "homepage": "https://github.com/telemark/fint-token-generator#readme",
   "dependencies": {
     "args": "3.0.8",
     "request": "2.83.0",
