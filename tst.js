@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const rp = require('request-promise')
 
 async function getData (url, token, orgId) {
