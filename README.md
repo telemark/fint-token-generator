@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/telemark/fint-token-generator.svg?branch=master)](https://travis-ci.org/telemark/fint-token-generator)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/fint-token-generator.svg)](https://greenkeeper.io/)
 
 # fint-token-generator
 
@@ -61,5 +60,3 @@ See [tst.js](tst.js)
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of fint-token-generator](https://robots.kebabstudios.party/fint-token-generator.png "Robohash image of fint-token-generator")
