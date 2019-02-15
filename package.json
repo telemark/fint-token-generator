@@ -43,7 +43,7 @@
   "dependencies": {
     "args": "5.0.0",
     "request": "2.88.0",
-    "request-promise": "4.2.2"
+    "request-promise": "4.2.4"
   },
   "devDependencies": {
     "ava": "1.2.1",
