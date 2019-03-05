@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/telemark/fint-token-generator#readme",
   "dependencies": {
-    "args": "5.0.0",
+    "args": "5.0.1",
     "request": "2.88.0",
     "request-promise": "4.2.4"
   },
